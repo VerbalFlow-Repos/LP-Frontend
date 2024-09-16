@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+@font-face {
+  font-family: 'VerbalFlowFont'; 
+  src: url('./assets/fonts/Satoshi/Satoshi-Light.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SubheadingFont'; 
+  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}

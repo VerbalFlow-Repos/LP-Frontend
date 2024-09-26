@@ -1,13 +1,16 @@
 {
   "name": "react-frontend",
   "private": true,
-  "version": "0.0.0",
+  "verion": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "server": {
+    "host": "true"
   },
   "dependencies": {
     "react": "^18.3.1",

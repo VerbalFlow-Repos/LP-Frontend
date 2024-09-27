@@ -17,7 +17,7 @@ const Paragraph = () => {
             <img 
                     src={isDarkMode ? NotificationIconLight : NotificationIconDark} 
                     alt="Notification" 
-                    className='w-[29px]'
+                    className='w-[29px] rounded-md'
                 />
                 <p className="flex ml-2 justify-start font-selanikFont text-[#454545] dark:text-[#acacac]">Get exclusive updates and be the first to use VerbalFlow!</p>
             </div>

@@ -2,11 +2,17 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   plugins: [require('daisyui')],
   darkMode: 'class',
+  daisyui: {
+    themes: ["nord", "business"],
+    darkTheme: "business",
+  },
   theme: {
     extend: {
       fontFamily: {
         verbalFlow: ['VerbalFlowFont', 'sans-serif'],
         verbalFlowSub: ['SubheadingFont', 'serif'],
+        asgardFont: ['AsgardFont', 'sans-serif'],
+        selanikFont: ['SelanikFont', 'sans-serif'],
       },
       keyframes: {
         shake: {

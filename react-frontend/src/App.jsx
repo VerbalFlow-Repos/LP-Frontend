@@ -1,45 +1,53 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css'
-import Modal from './FormComponents/Modal';
-import WaitlistInput from './FormComponents/WaitlistInput';
-import Logo from './ImageComponents/Logo';
+
+import Footer from './MenuComponents/Footer';
+import Navbar from './MenuComponents/Navbar';
+import Heading from './TextComponents/Heading';
 import Paragraph from './TextComponents/Paragraph';
-import Subheading from './TextComponents/Subheading';
+import GraphComponent from './ImageComponents/GraphComponent';
+import WaitlistInput from './FormComponents/WaitlistInput';
+import Modal from './FormComponents/Modal';
+import Pricing from './TextComponents/Pricing';
 import ContentText from './TextComponents/ContentText';
 import FAQ from './TextComponents/FAQ';
-import Footer from './Footer';
+import CtaDown from './TextComponents/CtaDown';
+import { ThemeProvider } from './ThemeComponents/ThemeContext';
+
 function App() {
-  useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      if (e.matches) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    });
-  }, []);
-
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <Logo />
-        <Paragraph />
-        <Subheading />
-        <WaitlistInput />
-        <Modal /> 
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <div className="flex justify-between items-baseline mt-8">
+          <div className="w-3/5">
+            <Heading />
+            <Paragraph />
+          </div>
+          <div className="w-2/6">
+            <GraphComponent />
+          </div>
+        </div>
+        <div className="mt-48 bg-base-300 w-screen -mx-[calc((100vw-100%)/2)] mb-16" id="waitlist">
+          <div className="flex py-16 justify-center items-center">  
+            <WaitlistInput />
+            <Modal />
+          </div>
+        </div>
+        <div id="about">
+          <ContentText />
+        </div>
+        <div id="pricing">
+          <Pricing />
+        </div>
+        <div className="mt-32"id="faq">
+          <FAQ />
+        </div>
+        <CtaDown />
+        <Footer />
       </div>
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <ContentText />
-      </div>
-      <FAQ />
-      <Footer />
-    </div>
+    </ThemeProvider>
+    
   );
 }
 

@@ -41,6 +41,11 @@
   color: #888;
 }
 
+::selection {
+  background-color: #FF9E56;
+  color: #454545;
+}
+
 @font-face {
   font-family: 'VerbalFlowFont'; 
   src: url('./assets/fonts/Satoshi/Satoshi-Light.otf') format('opentype'); 
@@ -51,6 +56,20 @@
 @font-face {
   font-family: 'SubheadingFont'; 
   src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AsgardFont'; 
+  src: url('./assets/fonts/Asgard/AsgardTrial-bold.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SelanikFont'; 
+  src: url('./assets/fonts/Selanik/Selanik-Rounded-Regular.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
 }

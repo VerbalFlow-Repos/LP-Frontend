@@ -6,9 +6,9 @@ const Footer = () => {
             <nav className="grid grid-flow-col gap-4 py-8">
                 <p> © {new Date().getFullYear()} VerbalFlow</p>
                 <p>•</p>
-                <a className="link link-hover">Privacy Policy</a>
+                <a href="/privacy-policy" className="link link-hover">Privacy Policy</a>
                 <p>•</p>
-                <a className="link link-hover">Imprint</a>
+                <a href="/imprint" className="link link-hover">Imprint</a>
             </nav>
         </footer>
     )

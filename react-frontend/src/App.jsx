@@ -44,9 +44,12 @@ function App() {
           <FAQ />
         </div>
         {/* <CtaDown /> */}
+        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         <Footer />
+        
       </div>
     </ThemeProvider>
+    
     
   );
 }

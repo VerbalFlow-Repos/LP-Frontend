@@ -1,6 +1,6 @@
 import React from 'react';
 import VerbalFlowLogoWhite from '../assets/VerbalFlow_Logo_White.png';
-import VerbalFlowLogoBlack from '../assets/VerbalFlow_Logo_Black.png';
+import VerbalFlowLogoBlack from '../assets/VerbalFlow_Logo_Black1.png';
 import ThemeController from '../ThemeComponents/ThemeController';
 import { useTheme } from '../ThemeComponents/ThemeContext';
 

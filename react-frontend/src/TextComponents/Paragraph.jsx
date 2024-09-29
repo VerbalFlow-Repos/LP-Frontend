@@ -1,6 +1,6 @@
 import React from "react";
 import NotificationIconLight from '../assets/NotificationIconLight.png';
-import NotificationIconDark from '../assets/NotificationIconDark.png';
+import NotificationIconDark from '../assets/NotificationIconDark1.png';
 import { useTheme } from '../ThemeComponents/ThemeContext';
 const Paragraph = () => {
     const { isDarkMode } = useTheme();

@@ -32,7 +32,7 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-3/5">
+          <div className="w-full md:w-3/5 mb-16">
             <div className="join join-vertical w-full">
               <div className="divider my-2"></div>
               {faqData.map((item, index) => (

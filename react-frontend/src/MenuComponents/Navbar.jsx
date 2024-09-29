@@ -17,11 +17,11 @@ const Navbar = () => {
                 />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="flex items-center font-selanikFont">
+                {/* <ul className="flex items-center font-selanikFont">
                     <li className="link link-hover mr-16"><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></li>
                     <li className="link link-hover mr-16"><a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a></li>
                     <li className="link link-hover mr-16"><a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>FAQ</a></li>
-                </ul>
+                </ul> */}
             </div>
             <div className="navbar-end">
                 <ThemeController />

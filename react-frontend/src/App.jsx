@@ -28,22 +28,22 @@ function App() {
             <GraphComponent />
           </div>
         </div>
-        <div className="mt-48 bg-base-300 w-screen -mx-[calc((100vw-100%)/2)] mb-16" id="waitlist">
+        <div className="mt-48 bg-base-300 w-screen -mx-[calc((100vw-100%)/2)]" id="waitlist">
           <div className="flex py-16 justify-center items-center">  
             <WaitlistInput />
             <Modal />
           </div>
         </div>
-        <div id="about">
+        {/* <div id="about">
           <ContentText />
         </div>
         <div id="pricing">
           <Pricing />
-        </div>
-        <div className="mt-32"id="faq">
+        </div> */}
+        <div className=""id="faq">
           <FAQ />
         </div>
-        <CtaDown />
+        {/* <CtaDown /> */}
         <Footer />
       </div>
     </ThemeProvider>

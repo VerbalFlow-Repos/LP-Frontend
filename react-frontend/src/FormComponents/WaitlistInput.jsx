@@ -28,7 +28,7 @@ const WaitlistInput = () => {
             <p className="text-[65px] leading-[1.1em]">
                 <span className={`font-asgardFont mb-4 font-extrabold ${isDarkMode ? 'text-white' : 'text-[#454545]'}`}>Sign up for our waitlist</span>                
             </p>
-            <p className="text-left font-selanikFont text-[22px] leading-[1.5em] text-[#454545] dark:text-[#acacac] mb-8">
+            <p className="text-left font-selanikFont text-center text-[22px] leading-[1.5em] text-[#454545] dark:text-[#acacac] mb-8">
             Receive updates on our progress and be the first to use VerbalFlow!
             </p>
         </div>
